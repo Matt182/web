@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>colors</title>
+</head>
+<body onload="start()" id="bodyqq">
+<script type="text/javascript">
+	colors = ["red","blue","yellow","green","black"];
+	targetId = Math.random() * 5;
+	targetId = Math.floor(targetId);
+	target = colors[targetId];
+	guess = 0;
+	NotAnswer = true;
+	function start(){
+		while(NotAnswer){
+			UserAns = prompt("Enter yor answer (((" + target);
+			if (UserAns != target){
+				alert("Youre wrong!");
+				guess++;
+			} else {
+				NotAnswer = false;
+				val = document.getElementById('bodyqq');
+				val.style.background = target;
+				alert("Right answer \n yo had " + guess + " guesses");
+			}
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "conf",
+  "homepage": "no",
+  "authors": [
+    "me"
+  ],
+  "description": "coursera web course",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "conFusion",
+    "restaurant"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.5.0"
+  }
+}

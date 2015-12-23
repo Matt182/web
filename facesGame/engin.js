@@ -12,6 +12,7 @@ function makef(n) {
     
     n = n;
     var top, left, node;
+    
     for (var i = 0;i < n; i++) {
         top = Math.random() * 450;
         top = Math.floor(top) + 8;
@@ -25,7 +26,7 @@ function makef(n) {
     var clo = theLeftSide.cloneNode(true);
     clo.setAttribute("id", "clone");
     theRightSide.appendChild(clo);
-document.getElementById("clone").removeChild(document.getElementById("clone").lastElementChild);
+    document.getElementById("clone").removeChild(document.getElementById("clone").lastElementChild);
     theLeftSide.lastElementChild.setAttribute("onclick","makef("+(n+3)+");")
 }
 
